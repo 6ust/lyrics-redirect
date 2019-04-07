@@ -12,7 +12,7 @@ if($result->num_rows > 0) {
 	?>
 		<tr>
 			<td>			
-				<a href="">
+				<a href="/lyrics/admin/pages/datatables.php?tbbandtmp=<?php echo $row['Tables_in_bands_db']?>">
 					<?php 
 						$nameTb = $row['Tables_in_bands_db'];
 						

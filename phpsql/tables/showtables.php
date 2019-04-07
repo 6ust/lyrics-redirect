@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" href="style.css">
-
 <?php
 
 $command = "use bands_db";
@@ -14,8 +12,13 @@ if($result->num_rows > 0) {
 	?>
 		<tr>
 			<td>			
-				<a href="">
-					<?php echo $row["Tables_in_bands_db"] ?>
+				<a href="/lyrics/user/pages/datatables.php?tbbandtmp=<?php echo $row['Tables_in_bands_db']?>">
+					<?php 
+						$nameTb = $row['Tables_in_bands_db'];
+						
+						echo $nameTb;
+
+					?>
 				</a>
 			</td>
 		</tr>

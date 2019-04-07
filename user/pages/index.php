@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>Lyrics</title>
-	<link rel="icon" href="images/icon/ClaveSol.png">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<?php include "phpsql/connection/dbconnection.php" ?>
+	<link rel="icon" href="../../images/icon/ClaveSol.png">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<?php include "../../phpsql/connection/dbconnection.php" ?>
 </head>
 <body>
 	<nav>
@@ -32,7 +32,7 @@
 		<br>
 		<table>
 			<tbody>
-				<?php include "phpsql/tables/showtables.php" ?>
+				<?php include "../../phpsql/tables/showtables.php" ?>
 			</tbody>
 		</table>
 
@@ -40,7 +40,7 @@
 		<!-- 7 Tables stays in PC Screen -->
 
 		<footer>
-			<a href="admin/pages/tables.php" target="_blank">Administer Page</a>
+			<a href="../../admin/pages/tables.php" target="_blank">Administer Page</a>
 		</footer>
 	</div>
 </body>

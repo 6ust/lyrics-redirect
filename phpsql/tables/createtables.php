@@ -2,8 +2,8 @@
 
 include "../../phpsql/connection/dbconnection.php";
 
-$command = "use bands_db";
-$result = $conn->query($command);
+// $command = "use bands_db";
+// $result = $conn->query($command);
 
 $band_name = $_GET['bandName'];
 
