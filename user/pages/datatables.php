@@ -37,21 +37,9 @@
 		<h1>Songs - <?php echo $bandName?></h1>
 		<br>
 		<br>
-		<table>
-			<thead>
-				<tr>
-					<th>SongName</th>
-					<th>Album</th>
-					<th>Lyric</th>
-				</tr>
-			</thead>
-			<tbody>
-				<!-- Implementar codigo para mostrar dados da tabela -->
-				<?php 
-					include "../../phpsql/data-tables/showdata.php"
-				?>
-			</tbody>
-		</table>
+		<?php 
+			include "../../phpsql/data-tables/showdata.php"
+		?>
 	</div>
 </body>
 </html>

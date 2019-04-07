@@ -13,18 +13,13 @@ if(!$conn) {
 	    // output data of each row
 	    while($row = mysqli_fetch_assoc($result)) {
 	        // echo "id: " . $row["id_band"]. " - Name: " . $row["song"]. " " . $row["album"]. "<br>";
-?>
-	<tr>
-		<td>
-			<p><?= $row["song"] ?></p>
-		</td>
-		<td>
-			<p><?= $row["album"] ?></p>
-		</td>
-		<td>
-			<p><?= $row["lyric"] ?></p>
-		</td>
-	</tr>
+?>	
+	<div>
+		<a href="<?= $row["lyric"] ?>" target="_blank">
+			<img src="<?= $row["album"] ?>">
+		</a>
+		<h3><?= $row["song"] ?></h3>
+	</div>
 <?php 
 	    }
 	} else {
