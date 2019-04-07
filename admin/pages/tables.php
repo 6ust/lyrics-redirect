@@ -15,7 +15,7 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="/lyrics/index.php">
+				<a href="../../index.html">
 					Home
 				</a>	
 			</li>

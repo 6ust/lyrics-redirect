@@ -14,9 +14,9 @@ if(!$conn) {
 	    while($row = mysqli_fetch_assoc($result)) {
 	        // echo "id: " . $row["id_band"]. " - Name: " . $row["song"]. " " . $row["album"]. "<br>";
 ?>	
-	<div>
+	<div style="display: inline-block; margin: 5px 15px;">
 		<a href="<?= $row["lyric"] ?>" target="_blank">
-			<img src="<?= $row["album"] ?>">
+			<img src="<?= $row["album"] ?>" style="width: 150px; height: 150px;">
 		</a>
 		<h3><?= $row["song"] ?></h3>
 	</div>

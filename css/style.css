@@ -9,10 +9,9 @@
 }
 /*=================================*/
 
-
 nav {
 	display: block;	
-	background-color: gray;
+	background-color: #545454;
 }
 nav ul li {
 	display: inline-block;
@@ -25,10 +24,14 @@ nav ul li a:hover {
 	color: red;
 }
 
-
+.song-field, .song-field img {
+	display: block;
+	width: 250px;
+	height: 250px;
+}
 .body {
 	display: block;
-	padding: 15px;
+	background-color: #bdbdbd;
 }
 
 
