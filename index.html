@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
-    <script src="js/alteration-layout.js"></script>
+    <script src="./js/alteration-layout.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
-    <script src="angular/model/app.js"></script>
-    <script src="angular/controller/english-controller.js"></script>
+    <script src="./angular/model/app.js"></script>
+    <script src="./angular/controller/english-controller.js"></script>
 
     <div class="page-screen"  ng-app="english">
         <nav>
@@ -43,18 +43,11 @@
             </div>
            
             <h1>Lyrics To Traine and Learn The English Languange</h1>
-
-            <table class="center-align">
+            
+            <table class="center-align" ng-controller="generalCtrl">
                 <tbody>
-                    <tr>
-                        <td><a href="pages/five-finger-death-punch.html">5FDP - Five Finger Death Punch</a></td>
-                        <td><a href="pages/audioslave.html">Audioslave</a></td>
-                        <td><a href="pages/avenged-sevenfold.html">A7X - Avenged Sevenfold</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/fort-minor.html">Fort Minor</a></td>
-                        <td><a href="pages/linkin-park.html">Linkin Park</a></td>
-                        <td></td>
+                    <tr ng-repeat="x in bands">
+                        <td><a href="pages/{{x.urlTemp}}">{{x.bandName}}</a></td>
                     </tr>
                 </tbody>
             </table>
