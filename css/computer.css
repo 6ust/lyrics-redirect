@@ -1,10 +1,10 @@
-@media only screen and (min-width: 650px) and (max-width: 2500px) {
+@media only screen and (min-width: 500px) and (max-width: 2500px) {
 	/*.body-content {*/
 	body {
 		background: url("../data/image/background/piano.jpg");
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		background-size: 1500px 700px;
+		background-size: 100% 100%;
 		z-index: 2; /*Position of div back of menubar*/
 	}
 	.body-content, .hide-unhide, 

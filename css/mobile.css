@@ -1,11 +1,12 @@
 @media only screen and (max-width: 650px) {
 	.body-content {
-		background: url("../data/image/background/piano.jpg");
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		margin: 40px 0px 0px 0px; 
-		padding: 25px 10px;
-		z-index: 2; /*Position of div back of menubar*/
+		/*background: url("../data/image/background/piano.jpg");*/
+		/*background-repeat: no-repeat;*/
+		/*background-size: auto 100%;*/
+		/*background-attachment: fixed;*/
+		/*margin: 40px 0px 0px 0px; */
+		/*padding: 25px 10px;*/
+		/*z-index: 2; Position of div back of menubar*/
 	}
 	.body-content, .hide-unhide, 
 	.left-screen, nav {
