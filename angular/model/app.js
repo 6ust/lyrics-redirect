@@ -1,1 +1,1 @@
-var english = angular.module("english", []);
+var lyricsApp = angular.module("lyricsApp", []);

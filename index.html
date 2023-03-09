@@ -3,7 +3,7 @@
 <head>
     <link rel="icon" href="http://portaldoamazonas.com/wp-content/uploads/2016/04/brasil-capa-e1460639102455-256x256.png">
     <meta charset="UTF-8">
-    <title>Lyrics</title>
+    <title>Lyrics Redirect</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" media="screen and  (min-width: 250px) and (max-width: 500px)" href="css/mobile.css">
@@ -18,40 +18,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
     <script src="./angular/model/app.js"></script>
-    <script src="./angular/controller/english-controller.js"></script>
+    <script src="./angular/controller/general-controller.js"></script>
 
-    <div class="page-screen"  ng-app="english">
-        <nav>
-            <ul>
-                <li><a href="#" class="disable">Lyrics</a></li>
-            </ul>
-        </nav>
-        <div class="left-screen hide">
-            <h4>Filter: <input type="text" ng-model="filterBand"/></h4>
-            <form>
-                <h4>Genre Musical</h4>
-                <ul>
-                    <li><input type="radio" ng-model="filterBand" value="metal"> Metal</li>
-                    <li><input type="radio" ng-model="filterBand" value="rock"> Rock</li>
-                    <li><input type="radio" ng-model="filterBand" value="hipHop"> Hip Hop</li>
-                </ul>
-            </form>
-        </div>
-        <div class="body-content left-align max center">
-            <div class="hide-unhide position-hide">
-                <a onclick="alter()"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-right-128.png" alt="right-arrow"></a>
+    <nav>
+        <ul>
+            <li><a href="#">Lyrics</a></li>
+        </ul>
+    </nav>
+
+    <main ng-app="lyricsApp">
+        
+        <h1>Lyrics Redirect</h1>
+        
+        <div class="container" ng-controller="bandsController">
+            <div class="container__list">
+                <div class="container__list__item" ng-repeat="band in bands">
+                    <a href="./pages/songs.html?band={{band.name.replaceAll(' ','_').toLowerCase()}}">
+                        <img src="{{band.image}}" alt="" class="container__list__item--img" />
+                        <h3 class="container__list__item--name">{{band.name}}</h3>
+                    </a>
+                </div>
             </div>
-           
-            <h1>Lyrics To Traine and Learn The English Languange</h1>
-            
-            <table class="center-align" ng-controller="generalCtrl">
-                <tbody>
-                    <tr ng-repeat="x in bands">
-                        <td><a href="pages/{{x.urlTemp}}">{{x.bandName}}</a></td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
-    </div>
+    </main>
 </body>
 </html>
